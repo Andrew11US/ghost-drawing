@@ -25,6 +25,11 @@ class CanvasViewController: UIViewController {
         populateDrawingButtons()
     }
     
+    override func loadView() {
+        super.loadView()
+        view.backgroundColor = .white
+    }
+    
     // MARK: - Methods
     private func setupConstraints() {
         canvasView.translatesAutoresizingMaskIntoConstraints = false

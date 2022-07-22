@@ -39,7 +39,6 @@ class CanvasView: UIView {
         
         let newLine = Line(points: [point], strokeColor: strokeColor, strokeWidth: strokeWidth)
         lines.append(newLine)
-        setNeedsDisplay()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -48,6 +47,12 @@ class CanvasView: UIView {
         
         lastLine.points.append(point)
         lines.append(lastLine)
-        setNeedsDisplay()
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let delay = DispatchTime.now() + DispatchTimeInterval.seconds(strokeColor.delay)
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            self.setNeedsDisplay()
+        }
     }
 }
