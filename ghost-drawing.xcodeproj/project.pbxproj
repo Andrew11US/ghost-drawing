@@ -16,6 +16,8 @@
 		0141B40828889C480091F6FF /* ghost_drawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B40728889C480091F6FF /* ghost_drawingTests.swift */; };
 		0141B41228889C480091F6FF /* ghost_drawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B41128889C480091F6FF /* ghost_drawingUITests.swift */; };
 		0141B41428889C480091F6FF /* ghost_drawingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B41328889C480091F6FF /* ghost_drawingUITestsLaunchTests.swift */; };
+		01EEEFC1288A236E0098A94E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEEFC0288A236E0098A94E /* Line.swift */; };
+		01EEEFC3288A23970098A94E /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEEFC2288A23970098A94E /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0141B40D28889C480091F6FF /* ghost-drawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ghost-drawingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0141B41128889C480091F6FF /* ghost_drawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost_drawingUITests.swift; sourceTree = "<group>"; };
 		0141B41328889C480091F6FF /* ghost_drawingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghost_drawingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01EEEFC0288A236E0098A94E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		01EEEFC2288A23970098A94E /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		01EEEFBA288A21B30098A94E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01EEEFC0288A236E0098A94E /* Line.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		01EEEFBB288A21CC0098A94E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01EEEFC2288A23970098A94E /* CanvasView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -299,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0141B3F528889C460091F6FF /* CanvasViewController.swift in Sources */,
+				01EEEFC1288A236E0098A94E /* Line.swift in Sources */,
+				01EEEFC3288A23970098A94E /* CanvasView.swift in Sources */,
 				0141B3F128889C460091F6FF /* AppDelegate.swift in Sources */,
 				0141B3F328889C460091F6FF /* SceneDelegate.swift in Sources */,
 			);
